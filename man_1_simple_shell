@@ -1,0 +1,15 @@
+.TH _PRINTF() 1.0 2021-03-16
+
+.SH NAME
+_mysh()
+
+
+.SH SYNOPSIS
+FORMAT [ARGUMENT]
+.B text
+
+.SH DESCRIPTION
+.B text
+
+.SH Language
+Use 'C' Language.
