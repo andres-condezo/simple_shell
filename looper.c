@@ -11,7 +11,7 @@ void _loop(void)
 	if (isatty(STDIN_FILENO) != 1)
 		inte = 0;
 
-	do{
+	do {
 		if (inte != 0)
 		{
 			/* Print prompt line. */
@@ -25,5 +25,22 @@ void _loop(void)
 		if (input == NULL)
 			return;
 	}
+
+	/* Split readed input into arguments. */
+		args = _split_line(input);
+		if (args == NULL)
+		{
+			free(input);
+			return;
+		}
+
+		/* Execute according to arguments. */
+		status = _execute(args, input);
+
+		/* Free input and arguments. */
+		free(input);
+		free(args);
+
+	} while (status == 1);
 
 }
