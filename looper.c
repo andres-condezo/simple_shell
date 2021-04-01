@@ -6,14 +6,13 @@
 
 void _loop(void)
 {
-	term = 1;
+	inte = 1;
 
 	if (isatty(STDIN_FILENO) != 1)
-		term = 0;
+		inte = 0;
 
-	do
-	{
-		if (term != 0)
+	do{
+		if (inte != 0)
 		{
 			/* Print prompt line. */
 			len = _strlen("[._.] ");
@@ -26,5 +25,5 @@ void _loop(void)
 		if (input == NULL)
 			return;
 	}
-	
+
 }
