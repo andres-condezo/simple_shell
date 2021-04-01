@@ -26,7 +26,7 @@ void _loop(void)
 			return;
 	}
 
-	/* Split readed input into arguments. */
+		/* Split readed input into arguments. */
 		args = _split_line(input);
 		if (args == NULL)
 		{
