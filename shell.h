@@ -5,4 +5,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+void _loop(void);
+
 #endif
