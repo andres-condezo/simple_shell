@@ -16,10 +16,15 @@ void _loop(void)
 		if (term != 0)
 		{
 			/* Print prompt line. */
-			len = _strlen("$ ");
+			len = _strlen("[._.] ");
 			/*printf("#cisfun$ ");*/
-			write(STDOUT_FILENO, "$ ", len);
+			write(STDOUT_FILENO, "[._.] ", len);
 		}
+
+		/*Read from promt line (input) */
+		input = _read_line();
+		if (input == NULL)
+			return;
 	}
 	
 }
