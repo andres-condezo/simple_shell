@@ -6,7 +6,8 @@
 
 void _loop(void)
 {
-	inte = 1;
+	char *input , **args;
+	int inte = 1, len, status;
 
 	if (isatty(STDIN_FILENO) != 1)
 		inte = 0;
