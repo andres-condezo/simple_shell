@@ -16,9 +16,9 @@ void _loop(void)
 		if (inte != 0)
 		{
 			/* Print prompt line. */
-			len = _strlen("[._.] ");
+			len = _strlen("$ ");
 			/*printf("#cisfun$ ");*/
-			write(STDOUT_FILENO, "[._.] ", len);
+			write(STDOUT_FILENO, "$ ", len);
 		}
 
 		/*Read from promt line (input) */
