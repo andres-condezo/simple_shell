@@ -7,6 +7,7 @@
 
 /* Prototypes for main functions*/
 void _loop(void);
+void sigint_handler(int sig);
 char *_read_line(void);
 char **_split_line(char *line);
 
