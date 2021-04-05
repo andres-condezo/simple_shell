@@ -21,7 +21,6 @@ void _loop(void)
 		input = _read_line(); /* Read from prompt line (input).*/
 		if (input == NULL)
 			return;
-
 /*
 *		args = _split_line(input); Splits input into arguments.
 *		if (args == NULL)
@@ -30,9 +29,10 @@ void _loop(void)
 *			return;
 *		}
 *		status = _execute(args, input); Execute according to arguments.
-*		status = 1
 */
-/*		 Free input and arguments. */
+		status = 1
+
+		/*  Free input and arguments. */
 		free(input);
 /*		free(args);*/
 	} while (status == 1);
