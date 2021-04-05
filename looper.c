@@ -21,7 +21,7 @@ void _loop(void)
 		input = _read_line(); /* Read from prompt line (input).*/
 		if (input == NULL)
 			return;
-	}
+
 /*
 *		args = _split_line(input); Splits input into arguments.
 *		if (args == NULL)
