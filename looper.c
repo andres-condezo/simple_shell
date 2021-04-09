@@ -11,6 +11,8 @@ void _loop(void)
 	if (isatty(STDIN_FILENO) != 1)
 		inte = 0;
 
+	signal(SIGINT, sigint_handler);
+
 	do {
 		if (inte != 0)
 		{/* Print prompt line. */
