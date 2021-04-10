@@ -7,8 +7,10 @@
 
 void sigint_handler(int sig)
 {
-    (void)sig;
-    _putchar('\n');
-    write(STDOUT_FILENO, "$ ", 2);
-    fflush(stdout);
+(void)sig;
+				klj
+								lñkñlklñk
+_putchar('\n');
+write(STDOUT_FILENO, "[._.] ", 6);
+fflush(stdout);
 }
