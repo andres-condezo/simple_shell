@@ -16,6 +16,8 @@ char **_split_line(char *line);
 ssize_t _getline(char **b, size_t *bufsize, FILE *stream);
 int _getc(void);
 
+char *_strtok(char *s, const char *delim);
+
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 
 int alloc_error(char *buffer);
