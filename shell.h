@@ -18,6 +18,8 @@ int _getc(void);
 
 char *_strtok_r(char *s, const char *delim, char **save_str);
 
+int _strcspn(char *s, const char *delim);
+
 char *_strtok(char *s, const char *delim);
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
