@@ -16,9 +16,11 @@ char **_split_line(char *line);
 int _execute(char **args, char *input);
 int _launch(char **args);
 char **_check_path(char **args, int *flag);
+char *_getenv(const char *name);
 
 /* Prototypes for auxiliary funtions */
 ssize_t _getline(char **b, size_t *bufsize, FILE *stream);
+
 int _getc(void);
 
 char *_strtok_r(char *s, const char *delim, char **save_str);
