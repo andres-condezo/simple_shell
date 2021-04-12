@@ -5,10 +5,10 @@
   * Return: 1 if _help works, 0 if exit works.
   */
 int (*builtin_func[])(char **args, char *input) = {
-    &_cd,
-    &_help,
-    &hsh_exit,
-    &_env,
+	&_cd,
+	&_help,
+	&hsh_exit,
+	&_env,
 };
 
 /**
@@ -19,16 +19,17 @@ int (*builtin_func[])(char **args, char *input) = {
   */
 int _execute(char **args, char *input)
 {
-    char *builtin_str[] = {"cd", "help", "exit", "env"};
-    int i;
-    if (args[0] == NULL)
-        return (1);
-    if (_strcmp(args[0], "setenv") == 0)
-        return (_setenv(args[1], args[2]));
-    for (i = 0; i < 4; i++)
-    {
-        if (_strcmp(args[0], builtin_str[i]) == 0)
-            return ((*builtin_func[i])(args, input));
-    }
-    return (_launch(args));
+	char *builtin_str[] = {"cd", "help", "exit", "env"};
+	int i;
+
+	if (args[0] == NULL)
+		return (1);
+	if (_strcmp(args[0], "setenv") == 0)
+		return (_setenv(args[1], args[2]));
+	for (i = 0; i < 4; i++)
+	{
+		if (_strcmp(args[0], builtin_str[i]) == 0)
+			return ((*builtin_func[i])(args, input));
+	}
+	return (_launch(args));
 }
