@@ -7,8 +7,11 @@
 
 void sigint_handler(int sig)
 {
-(void)sig;
+	int len;
+
+	(void)sig;
+	len = _strlen("[._.] ");
 	_putchar('\n');
-	write(STDOUT_FILENO, "[._.] ", 6);
+	write(STDOUT_FILENO, "[._.] ", len);
 	fflush(stdout);
 }
