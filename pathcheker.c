@@ -70,7 +70,7 @@ char **_check_path(char **args, int *flag)
 			_strcat(dest_path, "/");
 		else
 			_strcat(dest_path, "./");
-			_strcat(dest_path, args[0]);
+		_strcat(dest_path, args[0]);
 		if (access(dest_path, X_OK) != -1) /* Check acces rights */
 		{ args[0] = dest_path;
 			*flag = 1;
