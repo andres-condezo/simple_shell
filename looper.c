@@ -5,7 +5,8 @@
 */
 void _loop(void)
 {
-	char *input; /*	char  **args;*/
+	char *input;
+	char  **args;
 	int inte = 1, len, status;
 
 	if (isatty(STDIN_FILENO) != 1)
@@ -23,19 +24,19 @@ void _loop(void)
 		input = _read_line(); /* Read from prompt line (input).*/
 		if (input == NULL)
 			return;
-/*
-*		args = _split_line(input); Splits input into arguments.
-*		if (args == NULL)
-*		{
-*			free(input);
-*			return;
-*		}
-*		status = _execute(args, input); Execute according to arguments.
-*/
+
+		args = _split_line(input); /*Splits input into arguments.*/
+		if (args == NULL)
+		{
+			free(input);
+			return;
+		}
+		/* status = _execute(args, input); Execute according to arguments.*/
+
 		status = 1;
 
 		/*  Free input and arguments. */
 		free(input);
-/*		free(args);*/
+		free(args);
 	} while (status == 1);
 }
