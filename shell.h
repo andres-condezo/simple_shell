@@ -14,7 +14,7 @@ extern char **environ;
 /* Function declarations (prototypes for for builtin shell commands */
 int hsh_exit(char **args, char *input);
 int _cd(char **args, __attribute__((unused)) char *input);
-char **_split_path(char *line, char *copy_line)
+char **_split_path(char *line, char *copy_line);
 
 /**
   * _help - Help function
@@ -32,6 +32,7 @@ int _help(__attribute__((unused)) char **args,
   */
 int _env(__attribute__((unused)) char **args,
 	__attribute__((unused)) char *input);
+
 int _setenv(char *name, char *value);
 
 /* Prototypes for main functions*/
