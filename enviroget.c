@@ -14,7 +14,7 @@ char *_getenv(const char *name)
 
 	if (environ == NULL || name[0] == '\0')
 		return (NULL);
-		len--;
+			len--;
 	for (ep = environ; *ep != NULL; ep++)
 	{
 		if (!_strncmp(*ep, name, len) && (*ep)[len + 1] == '=')
