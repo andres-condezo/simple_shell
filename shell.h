@@ -13,6 +13,8 @@ void _loop(void);
 void sigint_handler(int sig);
 char *_read_line(void);
 char **_split_line(char *line);
+int _execute(char **args, char *input);
+int _launch(char **args);
 
 /* Prototypes for auxiliary funtions */
 ssize_t _getline(char **b, size_t *bufsize, FILE *stream);
