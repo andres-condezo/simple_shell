@@ -13,6 +13,8 @@ extern char **environ;
 /* Function declarations (prototypes for for builtin shell commands */
 int hsh_exit(char **args, char *input);
 int _cd(char **args, __attribute__((unused)) char *input);
+char **_split_path(char *line, char *copy_line)
+
 /**
   * _help - Help function
   * @args: List of arguments passed from parsing.
