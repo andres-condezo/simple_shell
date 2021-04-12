@@ -15,6 +15,7 @@ char *_read_line(void);
 char **_split_line(char *line);
 int _execute(char **args, char *input);
 int _launch(char **args);
+char **_check_path(char **args, int *flag);
 
 /* Prototypes for auxiliary funtions */
 ssize_t _getline(char **b, size_t *bufsize, FILE *stream);
