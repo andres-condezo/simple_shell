@@ -25,7 +25,7 @@ int _cd(char **args, __attribute__((unused)) char *input);
   * @input: Input line for free.
   * Return: 0 if works.
   */
-int hsh_exit(__attribute__((unused)) char **args, char *input)
+int hsh_exit(__attribute__((unused)) char **args, char *input);
 
 /**
   * _help - Help function
@@ -74,6 +74,10 @@ int alloc_error(char *buffer);
 int _strlen(char *s);
 int _putchar(char c);
 
+
+void _puts(char *str);
+int _putchar(char c);
+int _atoi(char *s);
 
 
 
