@@ -17,7 +17,7 @@ int _cd(char **args, __attribute__((unused)) char *input);
 char **_split_path(char *line, char *copy_line);
 
 int _setenv(char *name, char *value);
-int _cd(char **args, __attribute__((unused)) char *input);
+
 
 /**
   * hsh_exit - Exit to the shell.
