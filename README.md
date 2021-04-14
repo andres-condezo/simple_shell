@@ -53,7 +53,7 @@ Compilation
 The shell will be compilation this way:
 
 ```
-gcc   ...
+gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 ```
 
 ---
