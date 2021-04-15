@@ -1,13 +1,10 @@
-.TH HSH 1 "March 2021" "Version (0.1)" "SIMPLE SHELL MAN PAGE"
+.TH _SHELL() 1.0 2021-04-15
 
-.SH NAME                 \" Section Header - required - don't modify
-.PP
+.SH NAME
 Simple_shell
 
 .SH SYNOPSIS             \" Section Header - required - don't modify
-.PP
-
-Simple Shell
+.B Simple Shell
 .OP  command           
 .OP  options
 
@@ -20,15 +17,15 @@ is an utility that execute commands read from a command line string, the statnda
 
 .TP
 This version has characteristics similar to some aspects of the shell standard:
--The shell breaks the input into tokens: words and operators; see Token Recognition.
+The shell breaks the input into tokens: words and operators; see Token Recognition.
 
--The shell parses the input into simple commands.
+The shell parses the input into simple commands.
 
--The shell performs various expansions (separately) on different parts of each command, resulting in a list of pathnames and fields to be treated as a command and arguments.
+The shell performs various expansions (separately) on different parts of each command, resulting in a list of pathnames and fields to be treated as a command and arguments.
 
--The shell executes a function, built-in, executable file, or scripts
+The shell executes a function, built-in, executable file, or scripts
 
--The shell optionally waits for the command to complete and collects the exit status.
+The shell optionally waits for the command to complete and collects the exit status.
 
 .SH OPERANDS
 
