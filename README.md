@@ -139,7 +139,41 @@ gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 Examples
 -----------
 ```
-In this part will be put some examples
+[._.] ls -la
+total 120
+drwxrwxr-x 3 joseheco joseheco  4096 abr 15 09:25 .
+drwxrwxr-x 3 joseheco joseheco  4096 abr  9 16:49 ..
+-rw-rw-r-- 1 joseheco joseheco   172 abr 14 14:07 AUTHORS
+-rw-rw-r-- 1 joseheco joseheco  1007 abr 13 14:17 auxprint.c
+-rw-rw-r-- 1 joseheco joseheco  2555 abr 12 17:17 buildins.c
+-rw-rw-r-- 1 joseheco joseheco   519 abr 12 16:47 enviroget.c
+-rw-rw-r-- 1 joseheco joseheco  1103 abr  9 16:49 errorallocator.c
+-rw-rw-r-- 1 joseheco joseheco   790 abr 12 14:45 executer.c
+-rw-rw-r-- 1 joseheco joseheco   310 abr  9 16:49 _getc.c
+-rw-rw-r-- 1 joseheco joseheco  1344 abr  9 16:49 _getline.c
+drwxrwxr-x 8 joseheco joseheco  4096 abr 14 15:53 .git
+-rwxrwxr-x 1 joseheco joseheco 23256 abr 15 09:25 hsh
+-rw-rw-r-- 1 joseheco joseheco   688 abr 12 14:55 launcher.c
+-rw-rw-r-- 1 joseheco joseheco   791 abr 12 16:47 looper.c
+-rwxrwxr-x 1 joseheco joseheco   145 abr  9 16:49 man_1_simple_shell
+-rw-rw-r-- 1 joseheco joseheco  1956 abr 12 16:47 masaux.c
+-rw-rw-r-- 1 joseheco joseheco  2081 abr 12 17:18 pathcheker.c
+-rw-rw-r-- 1 joseheco joseheco   358 abr  9 16:49 reader.c
+-rw-rw-r-- 1 joseheco joseheco  1542 abr 14 15:46 README.md
+-rw-rw-r-- 1 joseheco joseheco   266 abr  9 16:49 _shell.c
+-rw-rw-r-- 1 joseheco joseheco  2130 abr 13 14:17 shell.h
+-rw-rw-r-- 1 joseheco joseheco   239 abr 12 14:37 signal.c
+-rw-rw-r-- 1 joseheco joseheco   783 abr 12 14:37 split_line.c
+-rw-rw-r-- 1 joseheco joseheco  1115 abr 12 16:46 splitpath.c
+-rw-rw-r-- 1 joseheco joseheco  1783 abr 12 14:37 straux.c
+[._.] pwd
+/home/joseheco/GitHub/Shell/simple_shell
+[._.] cd ..
+[._.] pwd
+/home/joseheco/GitHub/Shell
+[._.] ls
+simple_shell
+[._.]
 ```
 
 ---
