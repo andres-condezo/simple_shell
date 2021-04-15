@@ -122,7 +122,7 @@ Styling
 -----------
 
 The repository uses the Betty Style, using betty-style.pl and betty-doc.pl .
-Also it doent have more than 5 functions per file
+Also it doesn't have more than 5 functions per file
 
 ---
 Compilation
