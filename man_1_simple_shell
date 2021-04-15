@@ -63,29 +63,49 @@ my_file
 Run a script. All scripts run in their own subshell and this shell is not interactive. It only opens to execute the script and closes immediately once the script is finished.
 
 For example:
+
 $ ls
+
 my_file
+
 $ echo "/bin/ls" | ./simple_shell
+
 my_file
 .PP
+
 .SH BUILTIN SHELL COMMANDS
+
 .TP
 .I CD
 Change the directorie.
+
 .TP
 .I EXIT
 Exit to the shell.
+
 .TP
 .I HELP
 Display the help about a command.
+
+
+
 .SH EXIT STATUS
+
 .TP
 The following exit values shall be returned:
+
 0 \t The script to be executes was successful.
+
 1-127 \t The shell detected an error, not found and executable or redirection error.
+
 .SH LANGUAJE
+
 Use 'C' Language.
+
 .SH AUTHORS
+
 Renzo Perez\t <renzin@gmail.com>
+
 Andres Condezo\t <ra.condezomonge@gmail.com>
+
 Jose Herrera\t <jferhc@gmail.com>
