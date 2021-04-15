@@ -52,6 +52,7 @@ my_file
 $ ./Simple_shell
 
 Simple_shell $ ls
+
 my_file
 .PP
 
