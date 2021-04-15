@@ -117,20 +117,13 @@ _strspn
 _strtok_r
 _strtok
 ```
+
 ---
 Styling
 -----------
 
 The repository uses the Betty Style, using betty-style.pl and betty-doc.pl .
 Also it doent have more than 5 functions per file
-
-```
-exit ()
-getline()
-...
-...
-...
-```
 
 ---
 Compilation
