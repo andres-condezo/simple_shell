@@ -94,7 +94,7 @@ The following exit values shall be returned:
 
 0 \t The script to be executes was successful.
 
-1-127 \t The shell detected an error, not found and executable or redirection error.
+1-255 \t The shell detected an error, not found and executable or redirection error.
 
 .SH LANGUAJE
 
